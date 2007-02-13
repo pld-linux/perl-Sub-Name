@@ -6,30 +6,32 @@
 %define	pdir	Sub
 %define	pnam	Name
 Summary:	Sub::Name - (re)name a sub
-#Summary(pl):	
+Summary(pl.UTF-8):	Sub::Name - nazwanie/zmiana nazwy podprogramu
 Name:		perl-Sub-Name
 Version:	0.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Sub/Sub-Name-0.02.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a47e1f1fe88a0c85b7ecc0d150039616
+URL:		http://search.cpan.org/dist/Sub-Name/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module has only one function, which is also exported by default:
 
-Assigns a new name to referenced sub.  If package specification is
-omitted in the name, then the current package is used.  The return
+Assigns a new name to referenced sub. If package specification is
+omitted in the name, then the current package is used. The return
 value is the sub.
 
-# %description -l pl
-# TODO
+%description -l pl.UTF-8
+Ten moduł ma tylko jedną funkcję, eksportowaną domyślnie. Przypisuje
+ona nową nazwę do wskazanego podprogramu. Jeśli specyfikacja pakietu
+została pominięta w nazwie, użyty jest pakiet bieżący. Wartością
+zwracaną jset podprogram.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
