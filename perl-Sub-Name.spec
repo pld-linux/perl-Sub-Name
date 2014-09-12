@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Sub/Name.pm
 %dir %{perl_vendorarch}/auto/Sub/Name
-%{perl_vendorarch}/auto/Sub/Name/Name.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Sub/Name/Name.so
 %{_mandir}/man3/Sub::Name.3pm*
