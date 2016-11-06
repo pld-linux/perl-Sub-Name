@@ -8,13 +8,13 @@
 Summary:	Sub::Name - (re)name a sub
 Summary(pl.UTF-8):	Sub::Name - nazwanie/zmiana nazwy podprogramu
 Name:		perl-Sub-Name
-Version:	0.12
-Release:	3
+Version:	0.21
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	421afad5e34c0b4f753d578d99be535f
+# Source0-md5:	7e7a181e30b3249d0b81585f55e36621
 URL:		http://search.cpan.org/dist/Sub-Name/
 BuildRequires:	perl-ExtUtils-MakeMaker
 %if %{with tests}
