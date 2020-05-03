@@ -14,7 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0eb109dfa223e056c07d84c9fbda1762
-URL:		http://search.cpan.org/dist/Sub-Name/
+URL:		https://metacpan.org/release/Sub-Name
 BuildRequires:	perl-ExtUtils-MakeMaker
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
@@ -23,6 +23,7 @@ BuildRequires:	perl-Test-Simple >= 0.88
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
