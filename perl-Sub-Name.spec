@@ -8,7 +8,7 @@ Summary:	Sub::Name - (re)name a sub
 Summary(pl.UTF-8):	Sub::Name - nazwanie/zmiana nazwy podprogramu
 Name:		perl-Sub-Name
 Version:	0.26
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
