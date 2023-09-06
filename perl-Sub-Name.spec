@@ -1,20 +1,20 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define	pdir	Sub
 %define	pnam	Name
 Summary:	Sub::Name - (re)name a sub
 Summary(pl.UTF-8):	Sub::Name - nazwanie/zmiana nazwy podprogramu
 Name:		perl-Sub-Name
-Version:	0.26
-Release:	6
+Version:	0.27
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0eb109dfa223e056c07d84c9fbda1762
-URL:		https://metacpan.org/release/Sub-Name
+# Source0-md5:	c7f7c5fce6f9a3575dc3ffdd519b3911
+URL:		https://metacpan.org/dist/Sub-Name
 BuildRequires:	perl-ExtUtils-MakeMaker
 %if %{with tests}
 BuildRequires:	perl(Exporter) >= 5.57
